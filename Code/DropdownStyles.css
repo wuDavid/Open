@@ -1,13 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-body {
-  font-family: "Open Sans"; }
+#open {
+  font-family: "Open Sans";
+  position: absolute;
+  position: fixed;
+  width: 100%;
+  z-index: 1; }
 
 #outerwrapper {
+  margin: auto;
   width: 200px;
   height: auto;
   background-color: #1AB577;
   padding: 2px; }
-  #outerwrapper #holder button {
+  #outerwrapper button {
     border: none;
     width: 100%;
     background: transparent;
@@ -15,21 +20,32 @@ body {
     font-size: 13px;
     outline: none;
     font-weight: bold; }
-    #outerwrapper #holder button:hover {
+    #outerwrapper button:hover {
       cursor: pointer; }
+  #outerwrapper form {
+    padding: 2px; }
   #outerwrapper #wrapper {
-    display: none;
-    padding: 2px;
-    background-color: #1AB577; }
-    #outerwrapper #wrapper #buttons {
-      margin: 2px; }
-      #outerwrapper #wrapper #buttons select {
-        font-family: "Open Sans";
-        border: none;
-        border-right: 3px solid black; }
-    #outerwrapper #wrapper #inputlocation {
-      margin: 2px; }
-      #outerwrapper #wrapper #inputlocation #input::-webkit-input-placeholder {
+    display: none; }
+    #outerwrapper #wrapper select {
+      font-family: "Open Sans";
+      border: none;
+      border-right: 2px solid black; }
+    #outerwrapper #wrapper #input {
+      border: none;
+      border-right: 2px solid black;
+      padding: 1px; }
+      #outerwrapper #wrapper #input::-webkit-input-placeholder {
         font-family: "Open Sans"; }
+    #outerwrapper #wrapper #apply {
+      margin-top: 2px;
+      width: 100%;
+      outline: none;
+      font-family: "Open Sans";
+      font-weight: bold;
+      border: none;
+      border-right: 2px solid black;
+      background: white; }
+      #outerwrapper #wrapper #apply:hover {
+        cursor: pointer; }
 
 /*# sourceMappingURL=dropdownstyles.css.map */
